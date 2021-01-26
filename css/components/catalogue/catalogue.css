@@ -1,0 +1,72 @@
+.main-catalogue {
+    padding: 20px;
+    border-bottom: 7px solid var(--high-blue);
+}
+
+.main-catalogue h1 {
+    font-size: 20px;
+    font-weight: var(--bold);
+    color: var(--high-grey);
+}
+
+.catalogue-section {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.catalogue-section article {
+    border-radius: 5px;
+    background-color: var(--grey);
+    position: relative;
+}
+
+.catalogue-section article div {
+    width: 100%;
+    padding-bottom: 80px;
+    background-image: url(/resources/png/t-rex.png);
+    background-size: contain;
+}
+
+.catalogue-section article span {
+    display: inline-block;
+    padding: 10px;
+    min-height: 30vh;
+    font-weight: var(--bold);
+    color: var(--high-blue);
+}
+
+.catalogue-section article a {
+    font-size: 16px;
+    font-weight: var(--bold);
+    text-decoration: none;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: var(--high-blue);
+}
+
+.catalogue-section article a:hover {
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--high-blue);
+}
+
+@media screen and (min-width: 768px) {
+    .main-catalogue h1 {
+        font-size: 26px;
+    }
+    .catalogue-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main-catalogue {
+        border-bottom: 50px solid var(--high-blue);
+    }
+
+    .catalogue-section article span {
+        font-size: 22px;
+    }
+}

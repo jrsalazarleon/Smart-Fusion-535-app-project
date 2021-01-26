@@ -1,0 +1,4 @@
+.products-list li:not(:nth-child(4)) a:hover {
+    color: var(--high-grey);
+    transition: .4s;
+}

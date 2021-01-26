@@ -1,0 +1,71 @@
+.main-content {
+    padding: 20px;
+    border-bottom: 7px solid var(--high-blue);
+}
+
+.main-section {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    padding-left: 10px;
+}
+
+.main-section article {
+    background-color: var(--grey);
+    border-radius: 5px;
+    flex-shrink: 0;
+    width: 200px;
+    min-height: 60vh;
+    position: relative;
+}
+
+.main-section article:not(:last-child) {
+    margin-right: 15px;
+}
+
+.main-section article div {
+    width: 100%;
+    padding: 40px 0;
+    background-image: url(/resources/png/t-rex.png);
+    background-size: contain;
+}
+
+.main-section article span {
+    font-size: 22px;
+    font-weight: var(--bold);
+    text-decoration: none;
+    color: var(--high-blue);
+    margin-left: 10px;
+}
+
+.main-section article a {
+    color: var(--high-blue);
+    font-weight: var(--bold);
+    font-size: 16px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+.main-section article a:hover {
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--high-blue);
+}
+
+@media screen and (min-width: 1024px) {
+    .main-content {
+        border-bottom: 50px solid var(--high-blue);
+    }
+    .main-section {
+        padding: 0;
+        overflow-x: hidden;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .main-section article {
+        width: 100%;
+    }
+}

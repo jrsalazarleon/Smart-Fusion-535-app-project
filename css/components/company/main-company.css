@@ -1,0 +1,20 @@
+.company-content {
+    padding: 20px;
+    min-height: 100vh;
+    border-bottom: 7px solid var(--high-blue);
+}
+
+.company-content h1 {
+    font-size: 20px;
+    font-weight: var(--bold);
+    color: var(--high-grey);
+}
+
+@media screen and (min-width: 1024px) {
+    .company-content {
+        border-bottom: 60px solid var(--high-blue);
+    }
+    .company-content h1 {
+        font-size: 26px;
+    }
+}

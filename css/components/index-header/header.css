@@ -1,0 +1,100 @@
+.main-header {
+    background-image: url(/resources/png/t-rex.png);
+    background-color: var(--dark-blue);
+    background-size: contain;
+    padding: 20px 20px 40px 20px;
+    transition: .4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 8px solid var(--high-blue);
+}
+
+.main-header>svg {
+    width: 150px;
+    height: 150px;
+}
+
+.menu {
+    background: rgb(21, 38, 156);
+    background: linear-gradient(0deg, rgba(21, 38, 156, 0.9) 10%, rgba(29, 35, 76, 0.9) 70%);
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    width: 275px;
+    padding: 60px 0;
+    z-index: 1;
+}
+
+.menu li {
+    line-height: 2;
+}
+
+.menu li a {
+    font-weight: var(--bold);
+    text-decoration: none;
+    color: var(--white);
+}
+
+.menu.hidden {
+    display: none;
+    width: 200px;
+}
+
+.menu-button {
+    background: none;
+    padding: 5px 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .main-header {
+        padding: 0px 40px 200px 40px;
+        border-bottom: 25px solid var(--high-blue);
+    }
+
+    .main-header svg {
+        width: 200px;
+        height: 200px;
+    }
+
+    .menu.hidden {
+        background: none;
+        display: inline;
+        display: flex;
+        justify-content: flex-end;
+        padding: 0;
+        position: relative;
+        width: 370px;
+    }
+
+    .menu li:not(:first-child) {
+        margin-left: 20px;
+    }
+
+    .menu li:not(:last-child)::after {
+        content: "";
+        display: inline-block;
+        width: 2px;
+        height: 20px;
+        position: relative;
+        left: 10px;
+        top: 5px;
+        background-color: var(--white);
+    }
+
+    .menu li a {
+        font-size: 18px;
+    }
+
+    .menu li a:hover {
+        border-bottom: 1px solid var(--white);
+        padding-bottom: 3px;
+        transition: .4s;
+    }
+
+    .menu-button {
+        display: none;
+    }
+}
