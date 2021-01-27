@@ -25,8 +25,8 @@
 .catalogue-section article div {
     width: 100%;
     padding-bottom: 80px;
-    background-image: url(/resources/png/t-rex.png);
-    background-size: contain;
+    background-image: url(/resources/jpg/pvc.jpg);
+    background-size: cover;
 }
 
 .catalogue-section article span {

@@ -1,7 +1,6 @@
 .main-header {
-    background-image: url(/resources/png/t-rex.png);
-    background-color: var(--dark-blue);
-    background-size: contain;
+    background-image: url(/resources/jpg/pvc.jpg);
+    background-size: cover;
     padding: 20px 20px 40px 20px;
     transition: .4s;
     display: flex;
@@ -24,7 +23,7 @@
     top: 150px;
     transform: translate(-50%);
     text-align: center;
-    width: 330px;
+    width: 90%;
     padding: 60px 0;
     z-index: 1;
 }
@@ -77,6 +76,7 @@
 
     .menu li a {
         font-size: 18px;
+        color: var(--high-blue);
     }
 
     .menu li a:hover {
@@ -101,7 +101,7 @@
         position: relative;
         left: 10px;
         top: 5px;
-        background-color: var(--white);
+        background-color: var(--high-blue);
     }
 
     .menu li:not(:first-child) {
