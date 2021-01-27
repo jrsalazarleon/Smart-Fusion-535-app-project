@@ -7,14 +7,13 @@
     display: flex;
     overflow-y: hidden;
     overflow-x: auto;
-    padding-left: 10px;
 }
 
 .main-section article {
     background-color: var(--grey);
     border-radius: 5px;
     flex-shrink: 0;
-    width: 200px;
+    width: 325px;
     min-height: 60vh;
     position: relative;
 }
@@ -49,8 +48,8 @@
 }
 
 .main-section article a:hover {
-    padding-bottom: 2px;
-    border-bottom: 1px solid var(--high-blue);
+    color: var(--high-grey);
+    transition: .4s;
 }
 
 @media screen and (min-width: 1024px) {

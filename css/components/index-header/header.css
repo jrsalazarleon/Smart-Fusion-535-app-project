@@ -21,18 +21,20 @@
     border-radius: 10px;
     position: absolute;
     left: 50%;
+    top: 150px;
     transform: translate(-50%);
     text-align: center;
-    width: 275px;
+    width: 330px;
     padding: 60px 0;
     z-index: 1;
 }
 
 .menu li {
-    line-height: 2;
+    line-height: 2.5;
 }
 
 .menu li a {
+    font-size: 18px;
     font-weight: var(--bold);
     text-decoration: none;
     color: var(--white);
@@ -48,7 +50,7 @@
     padding: 5px 10px;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .main-header {
         padding: 0px 40px 200px 40px;
         border-bottom: 25px solid var(--high-blue);
@@ -61,18 +63,36 @@
 
     .menu.hidden {
         background: none;
-        display: inline;
         display: flex;
         justify-content: flex-end;
         padding: 0;
         position: relative;
+        top: 0;
         width: 370px;
     }
 
-    .menu li:not(:first-child) {
-        margin-left: 20px;
+    .menu li { 
+        padding: 0 5px;
     }
 
+    .menu li a {
+        font-size: 18px;
+    }
+
+    .menu li a:hover {
+        color: var(--high-grey);
+        transition: .4s;
+    }
+
+    .menu-button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .menu li {
+        padding: 0;
+    }
     .menu li:not(:last-child)::after {
         content: "";
         display: inline-block;
@@ -84,17 +104,7 @@
         background-color: var(--white);
     }
 
-    .menu li a {
-        font-size: 18px;
-    }
-
-    .menu li a:hover {
-        border-bottom: 1px solid var(--white);
-        padding-bottom: 3px;
-        transition: .4s;
-    }
-
-    .menu-button {
-        display: none;
+    .menu li:not(:first-child) {
+        margin-left: 20px;
     }
 }
