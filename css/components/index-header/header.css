@@ -40,9 +40,8 @@
     color: var(--white);
 }
 
-.menu.hidden {
+.hidden {
     display: none;
-    width: 200px;
 }
 
 .menu-button {
@@ -60,8 +59,9 @@
         width: 200px;
         height: 200px;
     }
+    
 
-    .menu.hidden {
+    .menu {
         background: none;
         display: flex;
         justify-content: flex-end;
