@@ -1,6 +1,8 @@
 .main-content {
     padding: 20px;
+    flex: 100%;
     border-bottom: 7px solid var(--high-blue);
+
 }
 
 .main-section {
@@ -14,7 +16,7 @@
     border-radius: 5px;
     flex-shrink: 0;
     width: 325px;
-    min-height: 60vh;
+    min-height: 400px;
     position: relative;
 }
 
