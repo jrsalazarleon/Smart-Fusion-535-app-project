@@ -90,6 +90,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .main-header {
+        padding: 0px 40px 300px 40px;
+    }
+
     .menu li {
         padding: 0;
     }
