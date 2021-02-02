@@ -29,6 +29,7 @@
     padding: 40px 0;
     background-image: url(/resources/jpg/pvc.jpg);
     background-size: cover;
+    border-radius: 5px;
 }
 
 .main-section article span {
