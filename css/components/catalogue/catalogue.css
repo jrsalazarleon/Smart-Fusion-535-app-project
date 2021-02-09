@@ -24,9 +24,27 @@
 
 .catalogue-section article div {
     width: 100%;
-    padding-bottom: 80px;
-    background-image: url(/resources/jpg/pvc.jpg);
+    padding-bottom: 150px;
     background-size: cover;
+}
+
+.catalogue-section article:nth-child(1) div {
+    background-image: url(/resources/jpg/ppr-article.jpg);
+    background-position: 0 -80px;
+}
+
+.catalogue-section article:nth-child(2) div {
+    background-image: url(/resources/jpg/hdpe.jpg);
+    background-position: 0 -60px;
+}
+
+.catalogue-section article:nth-child(3) div {
+    background-image: url(/resources/jpg/pvc-pipes.jpg);
+}
+
+.catalogue-section article:nth-child(4) div {
+    background-image: url(/resources/jpg/plumbing-fittings.jpg);
+    background-position: 0 -60px;
 }
 
 .catalogue-section article span {

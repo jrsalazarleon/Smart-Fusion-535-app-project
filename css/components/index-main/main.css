@@ -26,10 +26,31 @@
 
 .main-section article div {
     width: 100%;
-    padding: 40px 0;
-    background-image: url(/resources/jpg/pvc.jpg);
-    background-size: cover;
+    padding: 70px 0;
     border-radius: 5px;
+    background-size: cover;
+}
+
+.main-section article:nth-child(1) div {
+    background-image: url(/resources/jpg/ppr-article.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 -40px;
+}
+
+.main-section article:nth-child(2) div {
+    background-image: url(/resources/jpg/hdpe.jpg);
+    background-position: 0 -50px;
+}
+
+.main-section article:nth-child(3) div {
+    background-image: url(/resources/jpg/pvc-pipes.jpg);
+    background-size: 345px;
+    background-position: -20px;
+}
+
+.main-section article:nth-child(4) div {
+    background-image: url(/resources/jpg/plumbing-fittings.jpg);
+    background-position: 5px -20px;
 }
 
 .main-section article span {
@@ -38,6 +59,12 @@
     text-decoration: none;
     color: var(--high-blue);
     margin-left: 10px;
+}
+
+.main-section article p {
+    margin: 10px 0 30px 10px;
+    text-align: justify;
+    width: 90%;
 }
 
 .main-section article a {
