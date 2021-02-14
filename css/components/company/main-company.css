@@ -5,16 +5,53 @@
 }
 
 .company-content h1 {
-    font-size: 20px;
+    font-family: var(--sans-narrow);
+    font-size: 22px;
     font-weight: var(--bold);
     color: var(--high-grey);
+}
+
+.company-info article h2 {
+    font-family: var(--sans-narrow);
+    font-size: 18px;
+    font-weight: var(--bold);
+    color: var(--high-blue);
+    padding: 20px 0 5px 0;
+}
+
+.company-info article p {
+    text-align: justify;
+}
+
+.company-info article p:nth-child(2) {
+    padding-bottom: 20px;
 }
 
 @media screen and (min-width: 1024px) {
     .company-content {
         border-bottom: 60px solid var(--high-blue);
     }
+
     .company-content h1 {
         font-size: 26px;
     }
+
+    .company-info {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid red;
+    }
+
+    .company-info article {
+        width: 450px;
+    }
+
+    .company-info article:nth-child(2) {
+        order: 1;
+    } 
+
+    .company-info article:nth-child(3) {
+        margin-left: 20px;
+    }
+
 }

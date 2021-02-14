@@ -54,6 +54,7 @@
 }
 
 .main-section article span {
+    font-family: var(--sans-narrow);
     font-size: 22px;
     font-weight: var(--bold);
     text-decoration: none;

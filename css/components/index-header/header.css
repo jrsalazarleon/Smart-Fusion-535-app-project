@@ -7,6 +7,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 8px solid var(--high-blue);
+    font-family: var(--sans-narrow);
 }
 
 .main-header>svg {
@@ -75,12 +76,12 @@
     }
 
     .menu li a {
-        font-size: 18px;
+        font-size: 20px;
         color: var(--high-blue);
     }
 
     .menu li a:hover {
-        color: var(--high-grey);
+        color: var(--dark-blue);
         transition: .4s;
     }
 

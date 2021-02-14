@@ -4,6 +4,7 @@
 }
 
 .main-catalogue h1 {
+    font-family: var(--sans-narrow);
     font-size: 20px;
     font-weight: var(--bold);
     color: var(--high-grey);
@@ -30,12 +31,12 @@
 
 .catalogue-section article:nth-child(1) div {
     background-image: url(/resources/jpg/ppr-article.jpg);
-    background-position: 0 -80px;
+    /* background-position: 0 -80px; */
 }
 
 .catalogue-section article:nth-child(2) div {
     background-image: url(/resources/jpg/hdpe.jpg);
-    background-position: 0 -60px;
+    /* background-position: 0 -60px; */
 }
 
 .catalogue-section article:nth-child(3) div {
@@ -44,7 +45,7 @@
 
 .catalogue-section article:nth-child(4) div {
     background-image: url(/resources/jpg/plumbing-fittings.jpg);
-    background-position: 0 -60px;
+    /* background-position: 0 -60px; */
 }
 
 .catalogue-section article span {
@@ -86,5 +87,32 @@
 
     .catalogue-section article span {
         font-size: 22px;
+    }
+
+    .catalogue-section article:nth-child(1) div {
+        background-position: 0 -40px;
+    }
+    
+    .catalogue-section article:nth-child(2) div {
+        background-position: 0 -60px;
+    }
+    
+    .catalogue-section article:nth-child(3) div {
+        background-image: url(/resources/jpg/pvc-pipes.jpg);
+    }
+    
+    .catalogue-section article:nth-child(4) div {
+        background-position: 0 -30px;
+    }
+    
+}
+
+@media screen and (min-width: 1280px) {
+    .catalogue-section article:nth-child(1) div {
+        background-position: 0 -60px;
+    }
+
+    .catalogue-section article:nth-child(4) div {
+        background-position: 0 -70px;
     }
 }
