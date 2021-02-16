@@ -81,7 +81,7 @@
     }
 
     .menu li a:hover {
-        color: var(--dark-blue);
+        color: var(--gold);
         transition: .4s;
     }
 

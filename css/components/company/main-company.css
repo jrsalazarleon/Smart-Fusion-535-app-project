@@ -39,7 +39,6 @@
     .company-info {
         display: flex;
         flex-wrap: wrap;
-        border: 1px solid red;
     }
 
     .company-info article {

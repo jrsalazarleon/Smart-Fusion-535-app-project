@@ -61,3 +61,35 @@
 .advantage-list p strong {
     color: var(--high-blue);
 }
+
+@media screen and (min-width: 1024px) {
+    .product-section-wrapper {
+        display: flex;
+    }
+
+    .product-section article p {
+        width: 400px;
+    }
+
+    .product-section article ul {
+        width: 400px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .advantage-section {
+        width: 700px;
+    }
+
+    .product-section-wrapper {
+        justify-content: space-between;
+    }
+
+    .product-section article p {
+        width: 500px;
+    }
+
+    .product-section article ul {
+        width: 500px;
+    }
+}
