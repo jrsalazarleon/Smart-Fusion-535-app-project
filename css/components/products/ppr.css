@@ -3,6 +3,61 @@
     text-align: justify;
 }
 
+.product-section article > ul {
+    margin-top: 20px;
+}
+
+.product-section article > ul li {
+    list-style: disc;
+    padding: 5px 0;
+}
+
 .ppr-section p:first-child {
     padding-bottom: 20px;
+}
+
+.advantage-section {
+    padding: 20px;
+}
+
+.advantage-section header {
+    padding: 5px;
+    background-color: var(--high-blue);
+    font-size: var(--sans-narrow);
+    z-index: 5;
+}
+
+
+
+.advantage-section header h3 {
+    color: var(--white);
+    font-weight: var(--bold);
+}
+
+.advantage-list {
+    background-color: var(--light-blue);
+    padding: 40px 20px 60px 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.advantage-list li span svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.advantage-list li {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+}
+
+.advantage-list li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.advantage-list p strong {
+    color: var(--high-blue);
 }

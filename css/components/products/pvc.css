@@ -15,6 +15,10 @@
     text-decoration: none;
 }
 
+.pvc-section article p:nth-child(2) {
+    padding: 10px 0;
+}
+
 @media screen and (min-width: 768px) {
     .product-section {
       align-items: flex-end;
