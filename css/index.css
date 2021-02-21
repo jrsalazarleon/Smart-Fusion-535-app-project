@@ -5,9 +5,9 @@
 @import "/css/components/contact/main-contact.css";
 @import "/css/components/catalogue/catalogue.css";
 @import "/css/components/products/pvc.css";
-@import "/css/components/products/fittings.css";
 @import "/css/components/products/hdpe.css";
 @import "/css/components/products/ppr.css";
+@import "/css/components/products/fittings.css";
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
 @import "/css/base/utils.css";

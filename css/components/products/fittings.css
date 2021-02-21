@@ -2,3 +2,38 @@
     color: var(--high-grey);
     transition: .4s;
 }
+
+.fittings-section article h3 {
+    padding: 10px 0;
+    font-weight: var(--bold);
+}
+
+
+@media screen and (min-width: 1024px) {
+    .fittings-section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .fittings-section article {
+    }
+
+    .fittings-section img {
+        width: 400px;
+        height: 200px;
+        align-self: flex-start;
+        order: 1;
+    }
+
+    .fittings-section ul li p {
+        padding: 15px 0;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .fittings-section img {
+        width: 750px;
+        height: 300px;
+    }
+}

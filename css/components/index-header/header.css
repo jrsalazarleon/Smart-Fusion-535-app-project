@@ -19,10 +19,10 @@
     background: rgb(21, 38, 156);
     background: linear-gradient(0deg, rgba(21, 38, 156, 0.9) 10%, rgba(29, 35, 76, 0.9) 70%);
     border-radius: 10px;
-    position: absolute;
+    position: fixed;
     left: 50%;
-    top: 150px;
     transform: translate(-50%);
+    top: 150px;
     text-align: center;
     width: 90%;
     padding: 60px 0;
