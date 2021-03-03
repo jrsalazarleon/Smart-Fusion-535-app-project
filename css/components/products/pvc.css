@@ -1,7 +1,6 @@
 .product-header {
-    border-bottom: none;
+    border: none;
 }
-
 .products-list {
     background-color: var(--high-blue);
     display: flex;

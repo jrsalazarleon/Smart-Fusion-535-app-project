@@ -2,12 +2,36 @@
     padding: 20px;
     min-height: 100vh;
     border-bottom: 7px solid var(--high-blue);
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-content h1 {
     font-size: 20px;
     font-weight: var(--bold);
     color: var(--high-grey);
+}
+
+.contact-content h2 {
+    font-size: 18px;
+    padding: 10px 0;
+}
+
+.contact-content span {
+    padding: 15px 0;
+    font-size: 18px;
+    color: var(--high-blue);
+}
+
+.contact-content span::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+    background-image: url(/resources/png/email.png);
 }
 
 @media screen and (min-width: 1024px) {

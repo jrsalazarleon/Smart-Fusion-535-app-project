@@ -1,6 +1,7 @@
 .main-catalogue {
     padding: 20px;
     border-bottom: 7px solid var(--high-blue);
+    display: grid;
 }
 
 .main-catalogue h1 {
@@ -10,109 +11,20 @@
     color: var(--high-grey);
 }
 
-.catalogue-section {
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-.catalogue-section article {
-    border-radius: 5px;
-    background-color: var(--grey);
-    position: relative;
-}
-
-.catalogue-section article div {
-    width: 100%;
-    padding-bottom: 150px;
-    background-size: cover;
-}
-
-.catalogue-section article:nth-child(1) div {
-    background-image: url(/resources/jpg/ppr-article.jpg);
-    /* background-position: 0 -80px; */
-}
-
-.catalogue-section article:nth-child(2) div {
-    background-image: url(/resources/jpg/hdpe.jpg);
-    /* background-position: 0 -60px; */
-}
-
-.catalogue-section article:nth-child(3) div {
-    background-image: url(/resources/jpg/pvc-pipes.jpg);
-}
-
-.catalogue-section article:nth-child(4) div {
-    background-image: url(/resources/jpg/plumbing-fittings.jpg);
-    /* background-position: 0 -60px; */
-}
-
-.catalogue-section article span {
-    display: inline-block;
-    padding: 10px;
-    min-height: 30vh;
-    font-weight: var(--bold);
+.main-catalogue a {
+    padding: 10px 0;
     color: var(--high-blue);
-}
-
-.catalogue-section article a {
-    font-size: 16px;
     font-weight: var(--bold);
     text-decoration: none;
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-    color: var(--high-blue);
 }
 
-.catalogue-section article a:hover {
-    color: var(--high-grey);
+.main-catalogue a:hover {
+    color: var(--gold);
     transition: .4s;
 }
 
 @media screen and (min-width: 768px) {
     .main-catalogue h1 {
         font-size: 26px;
-    }
-    .catalogue-section {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .main-catalogue {
-        border-bottom: 50px solid var(--high-blue);
-    }
-
-    .catalogue-section article span {
-        font-size: 22px;
-    }
-
-    .catalogue-section article:nth-child(1) div {
-        background-position: 0 -40px;
-    }
-    
-    .catalogue-section article:nth-child(2) div {
-        background-position: 0 -60px;
-    }
-    
-    .catalogue-section article:nth-child(3) div {
-        background-image: url(/resources/jpg/pvc-pipes.jpg);
-    }
-    
-    .catalogue-section article:nth-child(4) div {
-        background-position: 0 -30px;
-    }
-    
-}
-
-@media screen and (min-width: 1280px) {
-    .catalogue-section article:nth-child(1) div {
-        background-position: 0 -60px;
-    }
-
-    .catalogue-section article:nth-child(4) div {
-        background-position: 0 -70px;
     }
 }
