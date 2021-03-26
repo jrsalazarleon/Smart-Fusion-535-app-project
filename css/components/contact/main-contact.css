@@ -17,13 +17,13 @@
     padding: 10px 0;
 }
 
-.contact-content span {
+.contact-wrapper span {
     padding: 15px 0;
     font-size: 18px;
     color: var(--high-blue);
 }
 
-.contact-content span::before {
+.contact-wrapper .emails-wrapper span::before {
     content: "";
     display: inline-block;
     width: 24px;
@@ -32,6 +32,51 @@
     position: relative;
     top: 5px;
     background-image: url(/resources/png/email.png);
+}
+
+.contact-wrapper {
+    margin-top: 30px;
+}
+
+.contact-wrapper  h2 {
+    font-size: 20px;
+    font-weight: var(--bold);
+    color: var(--high-blue);
+}
+
+.contact-wrapper .emails-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-wrapper .phone-numbers {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.phone-numbers span::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+    background-image: url(/resources/png/phone-icon.png);
+}
+
+@media screen and (min-width:768px) {
+    .contact-wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .contact-wrapper .phone-numbers  {
+        padding: 0;
+        position: relative;
+        left: 50px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
